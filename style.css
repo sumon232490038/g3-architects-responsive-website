@@ -12,9 +12,21 @@
     display: flex;
 }
 
-/* Dark-1 color */
-.dark-1 {
-    color: rgba(19, 19, 19, 1);
+.btn-primary {
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    border: none;
+
+}
+
+/* orange color */
+.orange {
+    color: rgba(255, 144, 14, 1);
 }
 /* Dark-2 color */
 .dark-2 {
@@ -25,7 +37,14 @@
     color: rgba(114, 114, 114, 1);
 }
 
+
+
 /* HEADER STYLE */
+
+.navber, .banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .header-bg {
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -35,6 +54,7 @@
 .navber {
     justify-content: space-between;
     margin: 0 auto;
+    align-items: center;
 }
 .nav-item {
  list-style: none;
@@ -46,3 +66,89 @@
 .nav-link {
     text-decoration: none;
 }
+.brand {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* this banner section style */
+
+.banner {
+    justify-content: center;
+}
+.banner-content {
+    margin: o auto;
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-title {
+ font-weight: bold;
+ font-size: 4rem;
+}
+.banner-img {
+    width:100%;
+}
+
+/* main section style */
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section {
+    margin-top: 130px;
+}
+.feature-and-images-parent {
+    align-items: center;
+}
+
+
+.group-images {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+ .our-features {
+    margin-left: 100px;
+ }
+
+ .our-features-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+ }
+
+ #quick-list {
+    font-weight: 500;
+
+ }
+ .Features-text {
+    color: rgba(255, 144, 14, 1);
+ }
+
+/* media query responsive */
+/* small device responsive */
+@media screen and (max-width:576px) {
+    .navber, .nav-links, .feature-and-images-parent {
+        flex-direction: column;
+    }
+    .group-images {
+        grid-template-columns: repeat(1,1fr);
+        
+    } 
+    .our-features {
+       margin-left: 20px;
+     }
+    
+}
+
+
+/* medium size device responsive */
+@media screen and (min-width:576px) and (max-width:992px) {
+   .feature-and-images-parent {
+    flex-direction: column;
+   }
+    
+}
+
