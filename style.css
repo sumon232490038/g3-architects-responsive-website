@@ -24,6 +24,11 @@
 
 }
 
+.section-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+ }
+
 /* orange color */
 .orange {
     color: rgba(255, 144, 14, 1);
@@ -114,10 +119,6 @@ main > section {
     margin-left: 100px;
  }
 
- .our-features-title {
-    font-size: 2.8rem;
-    font-weight: bold;
- }
 
  #quick-list {
     font-weight: 500;
@@ -126,6 +127,61 @@ main > section {
  .Features-text {
     color: rgba(255, 144, 14, 1);
  }
+
+
+ /* some facts section */
+
+
+ .some-fact-parent{
+    max-width: 540px;
+ }
+ .facts-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+ }
+ .fact-card {
+    border: 1px solid rgba(255, 144, 14, 1);
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ .fact-number {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+ }
+ .fact-name {
+    font-size: 1.2rem;
+    color: rgba(114, 114, 114, 1);
+ }
+  .first-discription {
+    max-width: 540px;
+  }
+
+  /* Our sponspors section  */
+
+  .our-sponspors-text {
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+    
+  }
+  .brand-imgage {
+    filter: grayscale(100%);
+    
+  }
+
+
+  .brand-imgage {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+  }
 
 /* media query responsive */
 /* small device responsive */
@@ -140,6 +196,21 @@ main > section {
     .our-features {
        margin-left: 20px;
      }
+
+     .facts-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+        
+     }
+     .brand-imgage {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 20px;
+        
+      }
+     
+
     
 }
 
@@ -149,6 +220,25 @@ main > section {
    .feature-and-images-parent {
     flex-direction: column;
    }
+   .some-fact-parent{
+    max-width: 540px;
+     margin: 0 auto;
+     text-align: center;
+    }
+
+
+   .facts-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+     gap: 50px;
+     justify-items: center;
+ }
+   .brand-imgage {
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+   
+      
+    }
     
 }
 
