@@ -7,6 +7,12 @@
     font-style: normal;
   }
 
+  body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
 /* Shared style */
 .display-flex {
     display: flex;
@@ -82,6 +88,7 @@
     justify-content: center;
 }
 .banner-content {
+    
     margin: o auto;
     margin-bottom: 50px;
     align-items: center;
@@ -90,7 +97,7 @@
 
 .banner-title {
  font-weight: bold;
- font-size: 4rem;
+ font-size: 3.8rem;
 }
 .banner-img {
     width:100%;
@@ -117,6 +124,9 @@ main > section {
 }
  .our-features {
     margin-left: 100px;
+    max-width: 540px;
+    justify-items: center;
+    text-align: center;
  }
 
 
@@ -134,6 +144,8 @@ main > section {
 
  .some-fact-parent{
     max-width: 540px;
+    justify-items: center;
+    text-align: center;
  }
  .facts-container {
     display: grid;
@@ -170,10 +182,13 @@ main > section {
     max-width: 540px;
     margin: 50px auto;
     text-align: center;
+    align-items: center;
     
   }
   .brand-imgage {
     filter: grayscale(100%);
+    
+    justify-items: center;
     
   }
 
@@ -183,10 +198,65 @@ main > section {
     grid-template-columns: repeat(5,1fr);
   }
 
+  /* features your will lonve and enjoy section */
+
+  .fratures-title {
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 30px;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .features-description {
+    font-size: 1rem;
+    margin-top: -10px;
+  }
+
+  .features-card{
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .card-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .features-main-container {
+     gap: 140px;
+  }
+  #experience-badge {
+    padding: 45px 42px;
+    margin-top: -100px;
+    margin-left: -80px;
+  }
+  .experience-year {
+    font-weight: bold;
+    font-size: 4rem;
+  }
+  .ex-name {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  footer {
+    text-align: center;
+    background-color: rgba(255, 144, 14, 0.1);
+    font-size: 1.25rem;
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+
+
 /* media query responsive */
 /* small device responsive */
 @media screen and (max-width:576px) {
-    .navber, .nav-links, .feature-and-images-parent {
+    .navber, .nav-links, .feature-and-images-parent,.features-main-container {
         flex-direction: column;
     }
     .group-images {
@@ -194,7 +264,7 @@ main > section {
         
     } 
     .our-features {
-       margin-left: 20px;
+       margin-left: 0px;
      }
 
      .facts-container {
@@ -209,7 +279,16 @@ main > section {
       gap: 20px;
         
       }
-     
+
+      .features-larg-image img {
+        width: 100%;
+      }
+      
+      #experience-badge {
+        
+        margin-top: 20px;
+        margin-left: 20px;
+      }
 
     
 }
@@ -217,7 +296,7 @@ main > section {
 
 /* medium size device responsive */
 @media screen and (min-width:576px) and (max-width:992px) {
-   .feature-and-images-parent {
+   .feature-and-images-parent ,.features-main-container{
     flex-direction: column;
    }
    .some-fact-parent{
@@ -237,8 +316,18 @@ main > section {
     grid-template-columns: repeat(3,1fr);
     gap: 50px;
    
-      
     }
+    .features-larg-image {
+        text-align: center;
+    }
+
+    #experience-badge {
+        
+        margin-top: 10px;
+        margin-left: 0px;
+        
+        
+      }
     
 }
 
